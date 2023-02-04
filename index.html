@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAKAN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>BAKAN</h1>
+        <p>Know your <abrr title="Jina la utani">Akan</abrr> Name Today.</p>
+      </div>
+    </header>
+    <div class="container">
+      <div class="jumbotron">
+        <h2>What are Akan Names?</h2>
+        <p>
+          Akan names are the names of Ghanaians. The naming is inspired by
+          Ghanian culture. They are named after the days of the week. They are
+          used to identify Ghanaians born in the country.For example Kwadwo is a
+          male name born on a Sunday.
+        </p>
+        <div class="d-flex">
+          <a href="#form-holder" class="know-btn">Get started</a>
+        </div>
+      </div>
+    </div>
+    <div class="container_fluid formOne" id="container-fluid">
+      <form id="formOne">
+        <div class="content">
+          <p>Enter Any Username and Password to Login.</p>
+          <h3>Login Here!</h3>
+        </div>
+        <div class="inline">
+          <label for="">Username <sup>*</sup></label>
+          <input type="text" id="username" placeholder="Username" required />
+          <label for="">Password <sup>*</sup></label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button type="submit" class="login" id="login">Login</button>
+        </div>
+      </form>
+    </div>
+    <div class="container d-none" id="form-holder">
+      <div class="form-holder">
+        <h3>Enter Your Birthday Details.</h3>
+        <form id="form">
+          <div class="inline">
+            <div class="input-holder">
+              <label for="day">Date</label>
+              <input type="number" id="day" max="31" min="1" />
+            </div>
+
+            <div class="input-holder">
+              <label for="month">Month</label>
+              <input type="number" id="month" max="12" min="1" />
+            </div>
+
+            <div class="input-holder">
+              <label for="year">Year</label>
+              <input type="number" id="year" min="1" />
+            </div>
+            <div class="input-holder">
+              <label class="gender">Gender</label>
+              <div class="radio-container">
+                <div class="radio-holder">
+                  <label for="male">Male</label>
+                  <input
+                    type="radio"
+                    onclick="setGender('male')"
+                    name="gender"
+                    id="male"
+                    value="male"
+                  />
+                </div>
+                <div class="radio-holder">
+                  <label for="female">Female</label>
+                  <input
+                    type="radio"
+                    onclick="setGender('female')"
+                    name="gender"
+                    id="female"
+                    value="female"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="input-holder">
+            <button class="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="d-none" id="results">
+      <div class="result-holder">
+        <h3>Hooray! Congratulations, We found your Akan Name</h3>
+        <p>
+          Your Birthday is: <strong><span id="akan-name"></span></strong>
+        </p>
+        <p>
+          Your Akan name is: <strong><span id="akan-birth-day"></span></strong>
+        </p>
+        <div>
+          <button class="submit" onclick="hideOrShowResults()">
+            Check Again!
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="./js/login.js"></script>
+    <script src="./js/constants.js"></script>
+    <script src="./js/index.js"></script> -->
+  </body>
+</html>
