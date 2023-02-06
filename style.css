@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  /* background-color: rgb(169, 182, 212); */
+}
+:root {
+  --bg-color: #d2cff5;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: #16addd;
+  color: white;
+  padding: 40px 0;
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+.jumbotron {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+}
+.jumbotron h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 30px 0;
+}
+.jumbotron p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 10px 0;
+}
+.d-flex {
+  padding: 20px 0;
+}
+.know-btn {
+  background-color: #16addd;
+  border-radius: 4px;
+  padding: 16px 25px;
+  color: white;
+  font-size: 16px;
+  font-size: 600;
+  border: 0;
+  outline: noe;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 300px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.form-holder,
+.result-holder {
+  max-width: 600px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px rgba(190, 190, 190, 0.5);
+  padding: 20px;
+  transition: all 0.25s linear;
+}
+.inline {
+  display: flex;
+  flex-wrap: wrap;
+}
+.input-holder {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.input-holder label:not(.gender) {
+  margin-bottom: 10px;
+}
+.input-holder input[type='number'] {
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgb(96, 255, 96);
+}
+.input-holder input[type='number']:focus {
+  outline: 1px solid rgb(96, 255, 96);
+  border: none;
+}
