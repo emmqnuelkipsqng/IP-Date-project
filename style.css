@@ -93,3 +93,107 @@ header {
   outline: 1px solid rgb(96, 255, 96);
   border: none;
 }
+.radio-holder {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.radio-holder label {
+  margin-bottom: 10px;
+}
+.radio-container {
+  display: flex;
+}
+.radio-holder input[type='radio'] {
+  cursor: pointer;
+  padding: 10px;
+  background: red;
+}
+.submit {
+  background-color: #16addd;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+.form-holder h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.result-holder p {
+  margin-bottom: 20px;
+}
+.d-none {
+  display: none;
+}
+.d-bock {
+  display: block;
+}
+.form-holder:hover,
+.result-holder:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 50px #aaaaaa50;
+}
+.container_fluid {
+  font-size: 17px;
+  margin: 50px auto;
+  padding: 40px;
+  box-shadow: 0 3px 4px 3px grey;
+  width: 30vw;
+}
+h3 {
+  margin: 10px;
+  padding: 10px;
+}
+.container_fluid .inline {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 2px;
+}
+#name,
+#lane,
+#email,
+#Pnumber,
+#uname,
+#password,
+#cpassword {
+  margin-top: 5px;
+  padding-left: 5px;
+}
+#name_,
+#uname_,
+#password_ {
+  margin-top: 5px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+.formOne input {
+  width: 300px;
+  height: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+.login {
+  width: 300px;
+  height: 38px;
+  border-radius: 5px;
+  background-color: #16addd;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.formlast {
+  margin-top: 10px;
+}
+p a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768) {
+}
